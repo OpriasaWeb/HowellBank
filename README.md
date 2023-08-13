@@ -14,20 +14,17 @@ Psuedocode:
           interest: 0.04
           deposit: 200
           currentbalance
-          year: 1
+          year: 2
 
           while acc_num != quit
-
+            currentbalance = deposit + (deposit * interest)
             while year <= 20
               currentbalance = currentbalance + (deposit * interest)
               message: your savings (currentbalance) at year + (year)
               year = year + 1
             endwhile
 
-            if year equals 20
-              acc_num = 0 // end the whole loop
-            endif
-          
-          endwhile
+            acc_num = quit // end the whole loop
 
+          endwhile
 
